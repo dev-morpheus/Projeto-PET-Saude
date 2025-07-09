@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 80px; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.main-header {
+    background-color: #fff; 
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.navbar-logo img {
+    height: 70px; 
+    width: auto;
+    display: block;
+}
+
+
+.main-nav-right {
+    display: flex; 
+    align-items: center; 
+}
+
+.main-nav-right ul {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-right ul li {
+    margin-left: 30px; /
+}
+
+.main-nav-right ul li a {
+    color: #000; 
+    text-decoration: none;
+    font-weight: 600; 
+    font-size: 1.05em;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.main-nav-right ul li a:hover {
+    color: #000269; 
+}
+
+.navbar-cta-right .cta-button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 22px;
+    border-radius: 5px;
+    margin-left: 30px; 
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.navbar-cta-right .cta-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.hero-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 650px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.hero-section .container {
+    max-width: 900px;
+}
+
+.hero-section h1 {
+    font-size: 3.8em; 
+    margin-bottom: 25px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    color: #ff7b00;
+}
+
+.hero-section .subtitle {
+    font-size: 1.8em;
+    margin-bottom: 50px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+    color: #180391; 
+}
+
+
+#about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center; 
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#about h2 {
+    font-size: 2.8em;
+    margin-bottom: 50px; 
+    color: #080031;
+}
+
+.about-content { 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 40px; 
+    text-align: left;
+}
+
+.about-banner { 
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 500px; 
+}
+
+.about-banner img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text { 
+    flex: 1.5;
+    min-width: 300px; 
+    max-width: 600px; 
+}
+
+.about-text h3 {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px; 
+}
+
+.about-text h3:last-of-type {
+    margin-bottom: 0;
+}
+
+#soluction {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#soluction h2 {
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    color: #080031;
+}
+
+.soluction-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* MUDANÇA AQUI: Agora o banner aparecerá à esquerda */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+
+.soluction-banner {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.soluction-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.soluction-text {
+    flex: 1.5;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.soluction-text h3,
+.soluction-text p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.soluction-text h3:last-of-type,
+.soluction-text p:last-of-type {
+    margin-bottom: 0;
+}
+
+#collaborators {
+    background-color: #f9f9f9; 
+    padding: 80px 0;
+    text-align: center;
+}
+
+#collaborators h2 {
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    color: #080031;
+}
+
+.collaborators-content {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 30px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.collaborators-text h3 {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.collaborators-text p {
+    font-size: 1.1em; 
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.collaborators-text .course-enfermagem { /* Estilo para o curso de enfermagem */
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #ff9900; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.collaborators-text .course-odontologia { /* Estilo para o curso de odonto */
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #008cff; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.collaborators-text .course-computacao { /* Estilo para o curso de computação */
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #0c003f; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.collaborators-text p:last-of-type {
+    margin-bottom: 0;
+}
+
+#contato {
+    background-color: #f0f0f0; 
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: #080031;
+}
+
+.contact-description {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.contact-cta-buttons {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 25px; 
+    margin-bottom: 40px;
+}
+
+.cta-button-contact {
+    display: inline-flex; 
+    align-items: center; 
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    color: #fff; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta-button-contact i { 
+    font-size: 1.2em; 
+    margin-right: 10px; 
+}
+
+
+.whatsapp-button {
+    background-color: #25D366; 
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.email-button {
+    background-color: #D44638;
+}
+
+.email-button:hover {
+    background-color: #B03A2C; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.contact-info {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px; 
+}
+
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section:nth-of-type(odd) { 
+    background-color: #fff;
+}
+
+section:nth-of-type(even) { 
+    background-color: #f0f0f0;
+}
+
+section h2 {
+    font-size: 2.5em; 
+    margin-bottom: 30px;
+    color: #080031; 
+}
+
+.content-wrapper { 
+    flex-grow: 1;
+    padding-top: 80px; 
+}
+
+.main-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 3em;
+    }
+    .hero-section .subtitle {
+        font-size: 1.5em;
+    }
+    .cta-main-button {
+        padding: 18px 35px;
+        font-size: 1.3em;
+    }
+
+    #about h2,
+    #soluction h2,
+    #collaborators h2 { 
+        font-size: 2.2em;
+    }
+    #about h3,
+    #soluction h3,
+    #collaborators h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+    .main-nav-right {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .main-nav-right ul {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .main-nav-right ul li {
+        margin: 8px 0;
+    }
+    .navbar-cta-right .cta-button {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .content-wrapper {
+        padding-top: 250px; 
+    }
+    
+    .hero-section {
+        padding: 100px 20px;
+        min-height: 500px;
+    }
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    .hero-section .subtitle {
+        font-size: 1.2em;
+    }
+    .cta-main-button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
+    .about-content,
+    .soluction-content,
+    .collaborators-content { 
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-banner,
+    .soluction-banner {
+        max-width: 80%;
+    }
+
+    .about-text,
+    .soluction-text,
+    .collaborators-text { 
+        max-width: 90%;
+        text-align: center;
+    }
+
+    #about h3,
+    #soluction h3,
+    #soluction p,
+    #collaborators h3,
+    #collaborators p { 
+        font-size: 1.1em;
+    }
+
+    .collaborators-text .course-enfermagem,
+    .collaborators-text .course-odontologia,
+    .collaborators-text .course-computacao {
+        font-size: 1.2em; 
+    }
+
+    .contact-cta-buttons {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .cta-button-contact {
+        width: 80%; 
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+
+    .contact-description {
+        font-size: 1.1em;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    .hero-section .subtitle {
+        font-size: 1em;
+    }
+    .cta-main-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+   
+    .content-wrapper {
+        padding-top: 220px; 
+    }
+}
