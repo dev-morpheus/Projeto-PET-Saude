@@ -8,14 +8,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    padding-top: 80px; 
-    display: flex; 
-    flex-direction: column; 
-    min-height: 100vh; 
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -27,66 +27,65 @@ a {
 
 
 .main-header {
-    background-color: #fff; 
+    background-color: #fff;
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 
 .navbar-content {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
 
 .navbar-logo img {
-    height: 70px; 
+    height: 70px;
     width: auto;
     display: block;
 }
 
 
 .main-nav-right {
-    display: flex; 
-    align-items: center; 
+    align-items: center;
 }
 
 .main-nav-right ul {
     list-style: none;
-    display: flex; 
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
 .main-nav-right ul li {
-    margin-left: 30px; /
+    margin-left: 30px;
 }
 
 .main-nav-right ul li a {
-    color: #000; 
+    color: #000;
     text-decoration: none;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 1.05em;
     padding: 5px 0;
     transition: color 0.3s ease;
 }
 
 .main-nav-right ul li a:hover {
-    color: #000269; 
+    color: #000269;
 }
 
 .navbar-cta-right .cta-button {
-    background-color: #007bff; 
-    color: #fff; 
+    background-color: #007bff;
+    color: #fff;
     padding: 10px 22px;
     border-radius: 5px;
-    margin-left: 30px; 
+    margin-left: 30px;
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
@@ -95,7 +94,23 @@ a {
 }
 
 .navbar-cta-right .cta-button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
+}
+
+/* Hamburger Menu Styles - Oculto por padrão no desktop */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    z-index: 1001; /* Garante que o botão esteja acima do menu quando aberto */
+}
+
+.hamburger-menu:focus {
+    outline: none;
 }
 
 
@@ -103,11 +118,11 @@ a {
     background-color: #fff;
     text-align: center;
     padding: 150px 20px;
-    min-height: 650px; 
+    min-height: 650px;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-section .container {
@@ -115,7 +130,7 @@ a {
 }
 
 .hero-section h1 {
-    font-size: 3.8em; 
+    font-size: 3.8em;
     margin-bottom: 25px;
     line-height: 1.2;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
@@ -129,14 +144,14 @@ a {
     margin-left: auto;
     margin-right: auto;
     opacity: 0.95;
-    color: #180391; 
+    color: #180391;
 }
 
 
 #about {
     background-color: #f9f9f9;
     padding: 80px 0;
-    text-align: center; 
+    text-align: center;
 }
 
 #about .container {
@@ -148,43 +163,43 @@ a {
 
 #about h2 {
     font-size: 2.8em;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     color: #080031;
 }
 
-.about-content { 
+.about-content {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: flex-start; 
-    gap: 40px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
     text-align: left;
 }
 
-.about-banner { 
-    flex: 1; 
-    min-width: 300px; 
-    max-width: 500px; 
+.about-banner {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .about-banner img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.about-text { 
+.about-text {
     flex: 1.5;
-    min-width: 300px; 
-    max-width: 600px; 
+    min-width: 300px;
+    max-width: 600px;
 }
 
 .about-text h3 {
     font-size: 1.3em;
     line-height: 1.8;
     color: #444;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .about-text h3:last-of-type {
@@ -246,7 +261,7 @@ a {
 }
 
 #collaborators {
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     padding: 80px 0;
     text-align: center;
 }
@@ -258,13 +273,13 @@ a {
 }
 
 .collaborators-content {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 30px; 
-    max-width: 900px; 
-    margin: 0 auto; 
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .collaborators-text h3 {
@@ -275,7 +290,7 @@ a {
 }
 
 .collaborators-text p {
-    font-size: 1.1em; 
+    font-size: 1.1em;
     line-height: 1.6;
     color: #555;
     margin-bottom: 10px;
@@ -284,7 +299,7 @@ a {
 .collaborators-text .course-enfermagem { /* Estilo para o curso de enfermagem */
     font-size: 1.4em;
     line-height: 1.6;
-    color: #ff9900; 
+    color: #ff9900;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -292,7 +307,7 @@ a {
 .collaborators-text .course-odontologia { /* Estilo para o curso de odonto */
     font-size: 1.4em;
     line-height: 1.6;
-    color: #008cff; 
+    color: #008cff;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -300,7 +315,7 @@ a {
 .collaborators-text .course-computacao { /* Estilo para o curso de computação */
     font-size: 1.4em;
     line-height: 1.6;
-    color: #0c003f; 
+    color: #0c003f;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -310,7 +325,7 @@ a {
 }
 
 #contato {
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     padding: 80px 0;
     text-align: center;
 }
@@ -333,33 +348,33 @@ a {
 
 .contact-cta-buttons {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 25px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
     margin-bottom: 40px;
 }
 
 .cta-button-contact {
-    display: inline-flex; 
-    align-items: center; 
+    display: inline-flex;
+    align-items: center;
     padding: 15px 30px;
     border-radius: 8px;
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    color: #fff; 
+    color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.cta-button-contact i { 
-    font-size: 1.2em; 
-    margin-right: 10px; 
+.cta-button-contact i {
+    font-size: 1.2em;
+    margin-right: 10px;
 }
 
 
 .whatsapp-button {
-    background-color: #25D366; 
+    background-color: #25D366;
 }
 
 .whatsapp-button:hover {
@@ -374,7 +389,7 @@ a {
 }
 
 .email-button:hover {
-    background-color: #B03A2C; 
+    background-color: #B03A2C;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
@@ -382,7 +397,7 @@ a {
 .contact-info {
     font-size: 1.2em;
     color: #666;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 
@@ -391,23 +406,23 @@ section {
     text-align: center;
 }
 
-section:nth-of-type(odd) { 
+section:nth-of-type(odd) {
     background-color: #fff;
 }
 
-section:nth-of-type(even) { 
+section:nth-of-type(even) {
     background-color: #f0f0f0;
 }
 
 section h2 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
     margin-bottom: 30px;
-    color: #080031; 
+    color: #080031;
 }
 
-.content-wrapper { 
+.content-wrapper {
     flex-grow: 1;
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 .main-footer {
@@ -416,7 +431,7 @@ section h2 {
     padding: 30px 0;
     text-align: center;
     font-size: 0.9em;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 @media (max-width: 992px) {
@@ -433,7 +448,7 @@ section h2 {
 
     #about h2,
     #soluction h2,
-    #collaborators h2 { 
+    #collaborators h2 {
         font-size: 2.2em;
     }
     #about h3,
@@ -445,33 +460,70 @@ section h2 {
 
 @media (max-width: 768px) {
     .navbar-content {
-        flex-direction: column;
-        padding: 10px 0;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        padding: 10px 20px; 
+        position: relative; 
     }
+
     .navbar-logo {
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
+
     .main-nav-right {
+        display: none; 
         flex-direction: column;
-        margin-bottom: 15px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 999;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
     }
+
+
+    .main-nav-right.active {
+        display: flex; 
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     .main-nav-right ul {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 0;
+        width: 100%;
     }
     .main-nav-right ul li {
-        margin: 8px 0;
+        margin: 10px 0; 
+        width: 100%;
+        text-align: center;
     }
-    .navbar-cta-right .cta-button {
-        margin-left: 0;
-        width: 80%;
+    .main-nav-right ul li a {
+        padding: 10px 0;
+        display: block; 
+    }
+
+    .navbar-cta-right {
+        display: none; 
+    }
+
+    .hamburger-menu {
+        display: block;
     }
 
     .content-wrapper {
-        padding-top: 250px; 
+        padding-top: 80px; 
     }
-    
+
     .hero-section {
         padding: 100px 20px;
         min-height: 500px;
@@ -489,7 +541,7 @@ section h2 {
 
     .about-content,
     .soluction-content,
-    .collaborators-content { 
+    .collaborators-content {
         flex-direction: column;
         align-items: center;
         gap: 30px;
@@ -502,7 +554,7 @@ section h2 {
 
     .about-text,
     .soluction-text,
-    .collaborators-text { 
+    .collaborators-text {
         max-width: 90%;
         text-align: center;
     }
@@ -511,23 +563,23 @@ section h2 {
     #soluction h3,
     #soluction p,
     #collaborators h3,
-    #collaborators p { 
+    #collaborators p {
         font-size: 1.1em;
     }
 
     .collaborators-text .course-enfermagem,
     .collaborators-text .course-odontologia,
     .collaborators-text .course-computacao {
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .contact-cta-buttons {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
 
     .cta-button-contact {
-        width: 80%; 
+        width: 80%;
         padding: 12px 20px;
         font-size: 1.1em;
     }
@@ -553,8 +605,8 @@ section h2 {
         padding: 12px 25px;
         font-size: 1em;
     }
-   
+
     .content-wrapper {
-        padding-top: 220px; 
+        padding-top: 80px;
     }
 }
